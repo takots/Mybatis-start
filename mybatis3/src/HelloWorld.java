@@ -16,7 +16,7 @@ public class HelloWorld {
 		try {
 			reader = Resources.getResourceAsReader("config/Configure.xml");
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
-			sqlSessionFactory.getConfiguration().addMapper(IUser.class);
+//			sqlSessionFactory.getConfiguration().addMapper(IUser.class);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -25,16 +25,16 @@ public class HelloWorld {
 		return sqlSessionFactory;
 	}
 	public static void main(String[] args) {
+		Test Test = new Test();
 		// TODO Auto-generated method stub
 		SqlSession session = sqlSessionFactory.openSession();
 		try {
-			IUser iuser = session.getMapper(IUser.class);
-            User user = iuser.getUserByID(1);
-            String userInfo = "名字："+user.getName()+", 所屬部門："+user.getDept()+", 主頁："+user.getWebsite();
-            System.out.println(userInfo);
+//			Test.Insert(session);
+//			Test.Update(session);
+//			Test.Delete(session);
+			Test.getUserList(session);
 		} finally {
 			session.close();
 		}
 	}
-
 }

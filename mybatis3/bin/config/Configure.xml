@@ -19,6 +19,6 @@
 
 	<mappers>
 	     <!-- // power by http://www.gitbook.net -->
-<!-- 	     <mapper resource="com/ts/mybatis/models/User.xml" /> -->
+	     <mapper resource="com/ts/mybatis/models/User.xml" />
 	</mappers>
 </configuration>
