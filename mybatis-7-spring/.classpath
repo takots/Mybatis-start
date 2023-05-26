@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="src/lib/ibatis-core-3.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/mysql-connector-j-8.0.33.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-aop-6.0.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-beans-6.0.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-context-6.0.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-core-6.0.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-expression-6.0.9.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-jcl-6.0.9.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="User" type="com.ts.pojo.User" />
+		<typeAlias alias="Order" type="com.ts.pojo.Order" />
+	</typeAliases>
+	<!-- Mybatis 和 Spring 集成之後,這些可以完全刪除（註釋掉）,數據庫連接的管理交給 Spring 來管理 -->
+<!-- 	<environments default="development"> -->
+<!-- 	    <environment id="development"> -->
+<!-- 		<transactionManager type="JDBC" /> -->
+<!-- 			<dataSource type="POOLED">   -->
+<!--                 <property name="driver" value="com.mysql.cj.jdbc.Driver" /> -->
+<!-- 			    <property name="url" value="jdbc:mysql://127.0.0.1:3308/yiibai?serverTimezone=Asia/Taipei" /> -->
+<!-- 			    <property name="username" value="root" /> -->
+<!-- 			    <property name="password" value="ji#@k7au$a83" /> -->
+<!--              </dataSource> -->
+<!-- 		</environment> -->
+<!-- 	</environments> -->
+
+	<mappers>
+	     <!-- // power by http://www.gitbook.net -->
+	     <mapper resource="com/ts/maper/UserMaper.xml" />
+	</mappers>
+</configuration>
